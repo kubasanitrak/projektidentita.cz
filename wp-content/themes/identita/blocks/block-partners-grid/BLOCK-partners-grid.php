@@ -19,6 +19,8 @@
     $CLS_W = 'inner-content full_width';
     // Create class attribute allowing for custom "className" values.
     $classes = ( ! empty( $block['className'] ) ) ? sprintf( $CLS_W . ' %s', $block['className'] ) : $CLS_W;
+
+    // $ratio = 2;
 ?>
 
 
@@ -49,7 +51,7 @@ if( have_rows('partners_row') ):
                 $ratio = $img_W / $img_H;
             endif;
 
-            if ( $ratio && ($img_W / $img_H) > 2.4) :
+            if (!$IS_TEXTLINK && ($ratio && ($img_W / $img_H) > 2.4)) :
                 $GRID_ITEM_CLS .= " ";
                 $GRID_ITEM_CLS .= "double-width";
             endif;

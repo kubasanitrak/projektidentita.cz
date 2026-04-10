@@ -15,7 +15,9 @@
     $CLS_W = 'shop-item';
     $ITEM_IMG_ID = get_field( 'shop_item_img' );
     $ITEM_IMG_OBJ = get_field( 'shop_item_img' );
-    $imgID = $ITEM_IMG_OBJ['ID'];
+    if(!empty($ITEM_IMG_OBJ) ) :
+        $imgID = $ITEM_IMG_OBJ['ID'];
+    endif;
     $ITEM_DESC = get_field( 'shop_item_desc' );
     $ITEM_PRICE = get_field( 'shop_item_price' );
     $ITEM_LINK = get_field( 'shop_item_link' );
@@ -39,7 +41,13 @@
 <div id="<?php echo $id; ?>" class="<?php echo esc_attr( $classes ); ?>" >
     <?php if(!$IS_GLOBAL_CARD) : ?>
     
-        <div class="shop-item--img"><?php echo wp_get_attachment_image($imgID, 'full'); ?></div>
+        <div class="shop-item--img">
+            <?php
+                if($imgID ): 
+                    echo wp_get_attachment_image($imgID, 'full');
+                endif; 
+            ?>
+        </div>
         <h5 class="shop-item--desc"><?php echo $ITEM_DESC; ?></h5>
         <p class="shop-item--price plain"><?php echo $ITEM_PRICE; ?></p>
 

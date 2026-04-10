@@ -19,9 +19,9 @@ endif;
 
 // Create class attribute allowing for custom "className" and "align" values.
 $CLS_W = 'inner-content'; 
-if ( ! empty( $block['className'] ) ) {
-    $class_name .= ' ' . $block['className'];
-}
+// if ( ! empty( $block['className'] ) ) {
+//     $class_name .= ' ' . $block['className'];
+// }
 
 // Load values and assign defaults.
 $IS_FULL_W = get_field( 'is_full_width' );
