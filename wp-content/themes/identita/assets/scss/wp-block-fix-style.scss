@@ -1,0 +1,129 @@
+@import '1-settings/_colors';
+@import '1-settings/_vars';
+@import '1-settings/_custom-ff';
+
+@import '1-tools/_mixins';
+
+// @import '2-generic/_body';
+// @import '2-generic/_box-model';
+// @import '2-generic/_reset';
+// @import '2-generic/_type';
+
+// @import '3-elements/_0-a';
+// @import '3-elements/_0-table';
+// @import '3-elements/_0-ul';
+// @import '3-elements/_1-button';
+// @import '3-elements/_1-form';
+// @import '3-elements/_2-headlines';
+// @import '3-elements/_2-sub-sup';
+
+// @import '4-objects/_classes';
+// @import '4-objects/_lazyloading';
+// @import '4-objects/_svg';
+// @import '4-objects/_video-embed';
+
+
+// @import '5-components/_01-header';
+// @import '5-components/_02-logo';
+// @import '5-components/_03.01-menu';
+
+// @import '5-components/_05.05-langswitch';
+// @import '5-components/_05-content';
+// @import '5-components/_06-footer';
+// @import '5-components/_00-css3-transforms.scss';
+
+
+
+.section-content .normal a,
+.text-link.normal a,
+a.text-link.normal {
+	text-transform: none!important;
+}
+
+.section {
+	* + .wp-block-image {
+		margin-top: calc(var(--pad-T) * 0.875);
+	}
+}
+
+
+.acf-line-top {
+  padding-bottom: 1px;
+}
+
+figure + .acf-line-top {
+  margin-top: calc(var(--pad-T)* 2.5);
+}
+
+h3 + figure.wp-block-embed {
+  margin-block-start: var(--pad-T);
+}
+
+.wp-post-image img {
+	margin-bottom: -5px;
+}
+
+
+.otgs-development-site-front-end {
+    display: none;
+    visibility: hidden;
+}
+                            
+body, html { height: stretch; height: -webkit-fill-available; }
+.wrapper { width: 100%; overflow-x: auto; overflow-y: scroll; max-height: 100vh!important; max-height: stretch; max-height: -webkit-fill-available; }
+
+
+.img-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--pad-R) * .5) var(--pad-R);
+
+	&--link {
+	}
+	&--item {
+	    overflow: hidden;
+	    flex: calc(var(--ratio)) 0 0;
+	    &:last-of-type {
+		    @include mq(mq-land) {
+		    }
+	    	&.is-portrait {
+			    @include mq(mq-land) {
+	    	}
+	    }
+    }
+	
+		&_break2,
+		&_break3,
+		&_break4 {
+		    width: 100%;
+		}
+		&_break2 {
+		    margin-top: calc(var(--pad-R) * -1);
+		    @include mq(mq-land) {
+			    display: none;
+		    }
+		}
+		&_break3 {
+		    display: none;
+		    @include mq(mq-land) {
+			    display: block;
+		    }
+				@include mq(mq-XL-UP) {
+			    display: none;
+			  }
+		}
+		&_break4 {
+		    display: none;
+		     @include mq(mq-XL-UP) {
+			    display: block;
+		    }
+		}
+
+		a img {
+		  width: 100%;
+		  height: auto;
+		  max-width: 100%;
+		  margin-bottom: -5px; 
+		}
+	}
+}

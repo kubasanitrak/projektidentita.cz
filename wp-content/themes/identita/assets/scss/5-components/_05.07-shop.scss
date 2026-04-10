@@ -1,0 +1,107 @@
+.shop-container {
+    &,
+    > .acf-innerblocks-container {
+        gap: var(--pad-R);
+        /*
+        display: flex;
+        flex-wrap: wrap;
+        */
+        display: grid;
+        grid-gap: var(--pad-R);
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-auto-rows: 1fr;
+    }
+}
+/* .shop-item>.shop-item--img+.shop-item--desc+.shop-item--price+.shop-item--link.abs-link */
+.shop-item {
+    overflow-x: clip;
+    // flex-grow: 1;
+    // flex: 1 0 100%;
+    /*
+    width: 100%;
+    @include mq(mq-iPad-port) {
+        // flex: 1 0 calc( (100% - var(--pad-R) * 2 ) / 3);
+        width: calc( (100% - var(--pad-R) * 2 ) / 3);
+    }
+    @include mq(mq-land-L-UP) {
+        // flex: 1 0 calc( (100% - var(--pad-R) * 3 ) / 4);
+        width: calc( (100% - var(--pad-R) * 3 ) / 4);
+    }
+    */
+    position: relative;
+    padding: 0 calc(var(--pad-R) * 0.65) calc(var(--pad-T) * 1.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    &.padded-top {
+        justify-content: space-between;
+        padding-top: calc(var(--pad-T) * 1.75);
+        // padding-right: calc(var(--pad-R) * 1.25);
+        h2,
+        h3 {
+            line-height: 0.9em;
+            margin-bottom: calc(var(--pad-T) * 2.5);
+        }
+        h4,
+        h5, 
+        p {
+            line-height: 1.25em;
+            // text-wrap: pretty;
+            text-wrap: balance;
+            @include mq(mq-L-UP) {
+                max-width: 80%;
+            }
+        }
+    }
+    &--img,
+    &--desc,
+    &--price {
+        width: 100%;
+    }
+    &--img {
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &--desc {
+        flex: 2 0 auto;
+        line-height: 1.1em;
+        text-wrap: balance;
+    }
+    &--price {
+        margin-top: calc(var(--pad-T) * 1.5);
+        display: flex;
+        justify-content: flex-end;
+        justify-self: baseline;
+// border-bottom: 1px solid #000;
+    }
+    &--link {}
+    .abs-link {}
+    color: var(--color-contrast-high);
+    &--btn_container {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.bg_color {
+    &_white {
+        background-color: var(--white);
+    }
+    &_blue {
+        background-color: var(--blue-c);
+        --color-contrast-high: var(--gray1);
+    }
+    &_dark {
+        background-color: var(--navy-c);
+        --color-contrast-high: var(--gray1);
+    }
+    &_grey {
+        background-color: var(--gray1);
+        --color-contrast-high: var(--navy);
+    }
+}
+
+

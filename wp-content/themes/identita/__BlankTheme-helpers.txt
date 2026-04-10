@@ -1,0 +1,5 @@
+sass --watch style.scss:style.css
+
+browser-sync start --proxy "http://localhost:8888/2replace/" --files "index.php"
+
+cd /Users/kuba/Sites_MAMP/2replace/wp-content/themes/nesedimsousedim/assets/css

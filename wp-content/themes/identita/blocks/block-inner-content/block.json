@@ -1,0 +1,13 @@
+{
+    "name": "acf/inner-content",
+    "title": "Inner Content",
+    "description": "Inner content to decide the width",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["content", "wrapper"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "BLOCK-inner-content.php"
+    },
+    "align": "full"
+}

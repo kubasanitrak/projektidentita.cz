@@ -1,0 +1,135 @@
+:root {
+	--pad-T: calc(8px + (12 - 8) * ((100vw - 320px) / (2560 - 320)));
+	--pad-R: calc(12px + (36 - 12) * ((100vw - 320px) / (2560 - 320)));
+	--fscreen-T: var(--pad-T);
+	--fscreen-R: var(--pad-R);
+
+	// --hmbrgr-T: calc(3px + (18 - 3) * ((100vw - 320px) / (2560 - 320)));
+
+	--dsalpha-1: 0.0;
+	--dsalpha-2: 0.0;
+	--maW: 1440;
+
+	--logo-W: calc(160px + (220 - 160) * ((100vw - 320px) / (2560 - 320)));
+	// --header-H: calc(48px + (102 - 48) * ((100vw - 320px) / (2560 - 320)));
+	// --header-H: calc(100vh * 0.05);
+	--header-H: calc(100vh * 0.065);
+	@media (orientation: landscape) {
+		--header-H: calc(100vh * 0.08);
+	}
+	--dir-LR: 1;
+
+	// --icon-H: calc(36px + (36 - 36) * ((100vw - 320px) / (2560 - 320)));
+
+	--logo-RATIO: 1;
+
+	--h2-lh: 0.85;
+
+	--bg-H: calc(100vh * 0.04);
+
+	--identita-ar: 1/4;
+
+	--overlap-tabs: 15vh;
+	// --overlap-R: 22vw;
+
+	--partners-gap: calc(32px + (72 - 32) * ((100vw - 320px) / (2560 - 320)));
+	
+	--icon-S: calc(32px + (36 - 32) * ((100vw - 320px) / (2560 - 320)));
+
+	--btn-pad-tb: 1;
+	--btn-pad-lr: 1;
+
+	--filler-H: 0;
+	
+	--touch-S: 36px;
+	--lightbox-icon-W: 36px;
+
+	--safari-btn-T: 1;
+	--safari-btn-B: 1;
+	
+	@media (pointer: coarse) {
+		--touch-S: 42px;
+		--lightbox-icon-W: 42px;
+	}
+
+	--bloomberg-H: 2.25rem;
+	--divider-W: 5px;
+	
+}
+
+/* GLOBAL SIZES */
+// $touch-S: 40px;
+$touch-S: var(--touch-S);
+$sidebar-W: 127px;
+
+/* CSS TRANSITION VARS */
+// $cubic: cubic-bezier(.13,1.5,.61,1.25);
+// $cubic: cubic-bezier(.09,.85,.38,.97);
+$cubic: cubic-bezier(.74,.23,.26,.96);
+$global-transistion-duration: 0.65s;
+$dur: 0.45;
+$stagger: 0.15;
+$prlx-dist: 60px;
+$base-T: 0.65;
+
+/* GLOBAL FONT-SIZE */
+// $fz-NAV: calc(16px + (14 - 16) * ((100vw - 320px) / (2560 - 320)));
+$fz-H1: calc(56px + (96 - 56) * ((100vw - 320px) / (2560 - 320)));
+$fz-H2: calc(32px + (64 - 32) * ((100vw - 320px) / (2560 - 320)));
+$fz-H3: calc(27px + (52 - 27) * ((100vw - 320px) / (2560 - 320)));
+$fz-H4: calc(22px + (36 - 22) * ((100vw - 320px) / (2560 - 320)));
+$fz-H5: calc(24px + (26 - 24) * ((100vw - 320px) / (2560 - 320)));
+$fz-PLAIN: calc(16px + (18 - 16) * ((100vw - 320px) / (2560 - 320)));
+$fz-NAV: $fz-PLAIN;
+// $fz-H5: $fz-PLAIN;
+$fz-H6: $fz-PLAIN;
+$fz-MINOR: calc(12px + (16 - 12) * ((100vw - 320px) / (2560 - 320)));
+
+/* GLOBAL PADDING */
+$pad-T: var(--pad-T);
+$pad-R: var(--pad-R);
+$pad-B: $pad-T;
+$pad-L: $pad-R;
+
+/* GLOBAL MARGIN */
+$mar-T: $pad-T;
+$mar-R: $pad-R;
+$mar-B: $pad-B;
+$mar-L: $pad-L;
+
+$mar-B-fix: calc(0.1px + (1.5 - 0.1) * ((100vw - 320px) / (2560 - 320)));
+
+/* HEADER */
+$header-H: 84px;
+
+/* LOGO */
+$logo-W: 100px;
+$logo-H: $logo-W;
+$mar-logo-H: 320px;
+
+/* NAVIGATION */
+$nav-GAP: 1rem;
+$nav-mar-T: $header-H+16px;
+
+
+
+/* NAVIGATION HAMBURGER MENU */
+$ham-W: 60px;
+$ham-H: 60px;
+// $ham-BGR: var(--color-highlight);
+
+
+$ham-PAD: 16px;
+$ham-BAR_STROKE: 2px;
+$ham-BAR_SPACE: 5px;
+
+/* FORM SPECIFIC */
+$bor-RADIUS: calc(3px + (5 - 3) * ((100vw - 320px) / (2560 - 320)));
+
+
+$line-THICK: 1px;
+$border-size: calc(10px + (16 - 10) * ((100vw - 320px) / (2560 - 320)));
+$dot-SIZE: 5px;
+
+$max-W: 46rem;
+$line-Lenght: 43rem;

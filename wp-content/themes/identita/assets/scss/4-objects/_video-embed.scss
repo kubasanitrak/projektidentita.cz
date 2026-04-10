@@ -1,0 +1,141 @@
+.video-container {
+	position: relative;
+	background-color: #000;
+	
+	iframe,
+	video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+video {
+	&,
+	&.vid-paused {
+		cursor: url("../images/cursor-play-w.png") 32 32, auto; // PLAY
+	}
+	&.vid-playing {
+		cursor: url("../images/cursor-pause-w.png") 32 32, auto; //PAUSE
+	}
+
+}
+
+/* */
+
+
+$play-S: 30px;
+$arr-H: $play-S;
+$arr-W: 26px;
+$arr-C: #fff;
+$play-C: #333;
+
+.youtube img,
+.play-button {
+	@include transition(opacity);
+	cursor: pointer;
+
+}
+.youtube {
+	// background-color: #fff;
+	background-color: transparent;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	img {
+		width: 100%;
+		max-width: 100%;
+		top: -16.75%;
+		left: 0;
+		opacity: 1;
+	}
+	&:hover {
+		img {
+			opacity: 0.75;
+		}
+		.play-button {
+			opacity: 1;
+		}
+	}
+}
+/*
+.play-button {
+	width: 2.4 * $play-S;
+	height: 2.4 * $play-S;
+	background-color: $play-C;
+	z-index: 1;
+	opacity: 0.8;
+	border-radius: 50%;
+	&:before {
+		content: "";
+		border-style: solid;
+		margin-left: 0.15 * $arr-W;
+		border-width: $arr-H * 0.5 0 $arr-H * 0.5 $arr-W;
+		border-color: transparent transparent transparent $arr-C;
+	}
+}
+
+.youtube img,
+.youtube iframe,
+.play-button,
+.play-button:before {
+	position: absolute;
+}
+.play-button,
+.play-button:before {
+	top: 50%;
+	left: 50%;
+	transform: translate3d( -50%, -50%, 0 );
+}
+*/
+
+.play-button {
+	width: 2.4 * $play-S;
+	height: 2.4 * $play-S;
+	background-color: $play-C;
+	z-index: 1;
+	opacity: 0.8;
+	border-radius: 50%;
+	&[data-btnlabel]::before,
+	&::after {
+		display: inline-flex;
+		// position: absolute;
+		// top: var(--pad-T);
+		// z-index: 0;
+	}
+	&[data-btnlabel]::before {
+		content: attr(data-btnlabel);
+		margin-right: var(--pad-R);
+		font-size: $fz-PLAIN;
+		color: var(--blue-c);
+	}
+	&::after {
+		width: var(--icon-S);
+		height: var(--icon-S);
+		background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24'%3E%3Cpath fill='%233250E6' d='M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0ZM7.8 18V6l10.39 6L7.8 18Z'/%3E%3C/svg%3E") center center no-repeat;
+		background-size: contain;
+	}
+	// &:before {
+		// content: "";
+		// border-style: solid;
+		// margin-left: 0.15 * $arr-W;
+		// border-width: $arr-H * 0.5 0 $arr-H * 0.5 $arr-W;
+		// border-color: transparent transparent transparent $arr-C;
+	// }
+}
+
+.youtube img,
+.youtube iframe,
+.play-button {
+	position: absolute;
+}
+.play-button {
+	top: 50%;
+	left: 50%;
+	transform: translate3d( -50%, -50%, 0 );
+}
+
+	

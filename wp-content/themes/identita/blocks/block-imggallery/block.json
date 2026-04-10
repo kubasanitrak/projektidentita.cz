@@ -1,0 +1,13 @@
+{
+    "name": "acf/imggallery",
+    "title": "Block Imggallery",
+    "description": "Image gallery block.",
+    "category": "formatting",
+    "icon": "<svg xmlns='http://www.w3.org/2000/svg' data-name='Layer 1' viewBox='0 0 36 36'> <path d='M12.16 21H27.8l-5.4-7.2-3.43 4.57-2.31-2.77-4.5 5.4z'/> <circle cx='12.8' cy='13.8' r='1.8'/> <path d='M28 4V0H3v12H0v17h25v-4h7v-3h4V4h-8ZM5 2h21v2H11v4H7v4H5V2Zm21 6H13V6h13v2ZM5 14h2v3H5v-3Zm18 13H2V14h1v5h4v6h16v2Zm7-4H9V10h21v13Zm4-3h-2V8h-4V6h6v14Z'/> </svg>",
+    "keywords": ["photo", "gallery"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "BLOCK-imggallery.php"
+    },
+    "align": "full"
+}

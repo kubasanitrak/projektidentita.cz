@@ -1,0 +1,13 @@
+{
+    "name": "acf/accordeon-download-content",
+    "title": "Download Content",
+    "description": "Custom accordeon block download content.",
+    "category": "formatting",
+    "icon": "<svg xmlns='http://www.w3.org/2000/svg' data-name='Layer 1' viewBox='0 0 36 36'> <path d='M12.5 29h-9C1.57 29 0 30.57 0 32.5S1.57 36 3.5 36h9c1.93 0 3.5-1.57 3.5-3.5S14.43 29 12.5 29Zm0 5h-9c-.83 0-1.5-.67-1.5-1.5S2.67 31 3.5 31h9c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5ZM30.5 29h-9c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5h9c1.93 0 3.5-1.57 3.5-3.5S32.43 29 30.5 29Zm0 5h-9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5h9c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5ZM0 21h29v2H0zM0 14h16v2H0zM0 25h36v2H0zM13.71 7.71l-1.42-1.42L9 9.59V0H7v9.59l-3.29-3.3-1.42 1.42L8 13.41l5.71-5.7z'/> </svg>",
+    "keywords": ["download", "media download", "press"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "BLOCK_accordeon_download_content.php"
+    },
+    "align": "full"
+}

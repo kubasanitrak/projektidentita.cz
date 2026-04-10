@@ -1,0 +1,74 @@
+.btn,
+.button,
+button,
+.wpml-language-switcher-block ul.hasSpacing.isHorizontal li,
+.wpml-language-switcher-block li > a.wp-block-navigation-item__content {
+
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+  	user-select: none; /* Standard syntax */
+
+  	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	
+
+	box-shadow: none;
+	border-radius: 50vw;
+	cursor: pointer;
+	
+	&:focus{
+		outline: 0;
+	}
+
+	display: inline-block;
+	
+	padding: calc(var(--pad-T) * var(--btn-pad-tb) * 1.1 * var(--safari-btn-T)) calc(var(--pad-R) * var(--btn-pad-lr)) calc(var(--pad-T) * var(--btn-pad-tb) * var(--safari-btn-B));
+	
+	background-image: none;
+	background-color: var(--color-bg);
+	color: var(--color-contrast-high);
+	font-family: inherit;
+	
+	text-shadow: none;
+	&-outline {
+		background-color: transparent;
+		background: transparent;
+		border: $line-THICK solid var(--color-contrast-high);
+	}
+	&-S {
+		--btn-pad-tb: 0.75;
+		--btn-pad-lr: 1.2;
+		@include mq(mq-land) {
+			--btn-pad-tb: 0.5;
+			--btn-pad-lr: 0.5;
+		}
+	}
+	&-XS {
+		--btn-pad-tb: 0.5;
+		--btn-pad-lr: 1.5;
+		@include mq(mq-land) {
+			--btn-pad-tb: 0.2;
+			--btn-pad-lr: 0.5;
+		}
+	}
+	&, > * {
+		text-decoration: none;
+	}
+}
+
+.wpml-language-switcher-block ul.hasSpacing.isHorizontal li {
+	background-color: transparent;
+	background: transparent;
+	border: $line-THICK solid var(--color-contrast-high);
+	--btn-pad-tb: 0.75;
+	--btn-pad-lr: 1.2;
+	@include mq(mq-land) {
+		--btn-pad-tb: 0.5;
+		--btn-pad-lr: 0.5;
+	}
+	&:not(:last-child) {
+		margin-right: 0!important;
+		// margin-right: 0;
+	}
+}

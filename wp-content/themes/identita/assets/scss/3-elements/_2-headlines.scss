@@ -1,0 +1,72 @@
+h1 {
+	font-size: $fz-H1;
+}
+h2 {
+	font-size: $fz-H2;
+}
+h3 {
+	font-size: $fz-H3;
+}
+h4 {
+	font-size: $fz-H4;
+}
+h5 {
+	font-size: $fz-H5;
+}
+h6 {
+	font-size: $fz-H6;
+}
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+	font-weight: normal;
+	font-style: normal;
+	letter-spacing: -0.015em;
+}
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+	line-height: 1.1em;
+}
+h4, .h4,
+body,
+p, .plain {
+	line-height: 1.333em;
+}
+
+// h1, .h1,
+// h2, .h2,
+h3 + p, .h3 + p,
+h4 + p, .h4 + p {
+	&:not(.btn) {
+		margin-top: 2em;
+	}
+}
+
+.inner-content h6 {
+    font-size:calc(20px + 8 *(100vw - 320px)/2240);
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing:-.015em;
+    line-height:1.1em
+}
+
+p,
+.plain {
+	&:not(.btn):not(.button) {
+		font-size: $fz-PLAIN;
+	}
+	// margin-bottom: 1em;
+	// line-height: 1.5em;
+	
+	* {
+		font-size: inherit;
+		line-height: inherit;
+	}
+}
+p + p {
+	&:not(.btn):not(.copyright) {
+		margin-top: 1em;
+	}
+}

@@ -1,0 +1,13 @@
+{
+    "name": "acf/inline-svg-container",
+    "title": "Inline SVG Container",
+    "description": "SVG wrapper",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["svg", "wrapper"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "BLOCK-inline-svg-container.php"
+    },
+    "align": "full"
+}

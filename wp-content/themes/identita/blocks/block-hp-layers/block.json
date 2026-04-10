@@ -1,0 +1,13 @@
+{
+    "name": "acf/hp-layers",
+    "title": "HP layer",
+    "description": "HP specific layer block",
+    "category": "formatting",
+    "icon": "admin-comments",
+    "keywords": ["layer", "homepage"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "BLOCK-hp-layers.php"
+    },
+    "align": "full"
+}

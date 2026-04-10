@@ -1,0 +1,23 @@
+Desktop
+	– horní lišta „nekonečná“ – motiv by se měl opakovat stále dokola
+	– nápisy u záložek tv cyklus, výstava apod. – zmenšené nápisy vyhodit, název složky prostě „odjede“
+	– fotogalerie – vrstvy v pozadí jen ilustrativní, po kliknutí se rozbalí fotka přes celé (náhled vrstev navrhnu ve figmě, pošlu asap)
+	– když se rozbalí menu, vrstvy na HP se rozhodí
+	– když se proklikává z menu na prvky z HP (cyklus, výstava apod.) nenajede se na začátek tématu ale někam doprostřed
+– odbarvená verze – linky jednotl. vrstev se ztrácejí
+	– odbarvení – šlo by aby si to pamatovalo zakliknutí i když jdeš na další stránky? Aktuálně se to „vynuluje“ při kliknutí na jinou postránku
+	– účinkující – šedá vrstva pod nápisem až do kraje stránky, 
+	- účinkující oddělit čárkou a normální mezerou (ale to je možná už úkol na tým identity co?)
+	– ještě takové hnidopišství – všechny titulky (tv cyklus, výstava, aktuality, tvůrci apod.) mají nahoře o dost větší mezeru než zleva, šlo by sjednotit a všude posunout blíž k hornímu okraji? (U HP se nám tím třeba díky tomu i lehce zvětší prostor kde se vše odehrává :))
+
+Mobilní verze 
+	– je úplně nějak rozhozená (posílám video) – ujíždí to do stran apod.
+	– obecně u mobilu bychom udělali ideálně všechny vrstvy až do krajů, není tam moc prostoru teď (kromě zápatí, to nechat jak je)
+	– logo po rozbalení HP prosím blíž k hornímu menu, u podstránek rovnou malé vedle menu
+	– aktuality – šipky vylézají z formátu
+Přidal jsem
+	- accordeon rozklikávací i ťukem na titulek
+	+ další bug fixy
+
+
+	

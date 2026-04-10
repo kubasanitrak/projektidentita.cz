@@ -1,0 +1,65 @@
+.section {
+	&-main--header {
+		z-index: 16;
+	}
+	&-content--partners,
+	&-content--newsletter,
+	&-content--press,
+	&-content--footer {
+		z-index: 15;
+	}
+}
+
+.section-header {
+	&:not(.section-main--header) {
+		z-index: 11;
+	}
+}
+.colorise-btn {
+	z-index: 110;
+	span {
+	}
+}
+
+.hamburger {
+	z-index: 1012;
+	span {
+		z-index: 1;
+		&::before,
+		&::after {
+			z-index: 2;
+		}
+	}
+}
+
+.menu {
+	z-index: 1011;
+}
+
+.section-content {
+	&--plan4 {
+		z-index: 0;
+	}
+	&--plan3_filler {
+		z-index: 10;
+	}
+}
+
+.section-header--plan1,
+.section-header--plan2,
+.section-header--plan3,
+.section-header--plan4 {
+	&.is-pinned {
+		z-index: 13;
+	}
+}
+
+// .section-footer--pribeh,
+.section-footer--plan1,
+.section-footer--plan2,
+.section-footer--plan3,
+.section-footer--plan4 {
+	&.inView {
+		z-index: 12;
+	}
+}

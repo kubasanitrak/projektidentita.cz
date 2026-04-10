@@ -1,0 +1,19 @@
+.wpml-language-switcher-block,
+.wp-block-navigation {
+    div {
+    &.wp-block-navigation-item {}
+    &.wp-block-navigation-submenu {}
+        ul {
+            &.horizontal-list {}
+            &.hasSpacing {}
+            &.isHorizontal {}
+            /* style="--language-spacing: 16px; flex-wrap: nowrap;" */
+            li {
+            	&.wp-block-navigation-item {}
+                a.wp-block-navigation-item__content {
+                    span.wp-block-navigation-item__label {}
+                }
+            }
+        }
+	}
+}

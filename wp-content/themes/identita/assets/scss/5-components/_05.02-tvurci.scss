@@ -1,0 +1,118 @@
+/*
+.section-header--tvurci {
+
+}
+.section-content--tvurci {
+
+}
+*/
+.tvurci {
+	padding: calc(var(--pad-T) * 1.5) var(--pad-R) calc(var(--pad-T) * 3) 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: calc(var(--pad-T) * 7) var(--pad-R);
+	// gap: calc(var(--pad-R) * 2);
+	// flex-direction: column;
+	justify-content: space-between;
+	@include mq(mq-land) {
+		// flex-direction: row;
+	}
+	&-item {
+		// flex: 1 0 100%;
+		width: 100%;
+		@include mq(mq-land) {
+			width: calc((100% - var(--pad-R)) / 2.05);
+		}
+		// border-bottom line-after
+		&--header,
+		&--content {
+			display: flex;
+			justify-content: space-between;
+		}
+		&--header {
+			flex-wrap: wrap;
+			&:not(.a-i-fstart) {
+				align-items: baseline;
+			}
+			// align-items: flex-end;
+			position: relative;
+			&::after {
+				content: "";
+				display: block;
+				width: 100%;
+				bottom: 0;
+				left: 0;
+				height: $line-THICK;
+				background-color: var(--tvurci-cont-clr);
+			}
+		}
+		&--title {
+			// flex: 2 0 auto;
+		}
+		&--proff {
+			// flex: 0.5 1 12ch;
+			&_extralong {
+				flex: 0.2 2 12em;
+				// max-width: 15em;
+				text-align: right;
+				letter-spacing: -0.035em;
+				* {
+					line-height: 1.1em;
+				}
+			}
+		}
+		&--content {
+			margin-top: calc(var(--pad-T) * 2);
+			gap: var(--pad-R);
+			flex-wrap: wrap;
+			align-items: flex-start;
+			@include mq(mq-land) {
+				flex-wrap: nowrap;
+			}
+		}
+		&--caption {
+			order: 2;
+			@include mq(mq-land) {
+				order: 0;
+			}
+		}
+		&--profilepic {
+			order: 0;
+			@include mq(mq-land) {
+				order: 2;
+			}
+			display: flex;
+			aspect-ratio: 1;
+// background-color: pink;
+			width: 23%;
+			max-width: 7.5rem;
+			min-width: 5rem;
+			overflow: hidden;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+.ucinkujici-list {
+	// gap: var(--pad-T) calc(var(--pad-T) * 2);
+	// gap: var(--pad-T) 0;
+	gap: .25em 0;
+	margin-top: calc(var(--pad-T) * 4);
+	// gap: var(--partners-gap);
+	&--item {
+		font-size: $fz-PLAIN;
+	}
+	li {
+		&:not(:last-child) {
+			margin-right: .5em;
+			&::after {
+				content: ",";
+				display: inline-block;
+				position: relative;
+			}
+		}
+	}
+}

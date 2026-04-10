@@ -1,0 +1,232 @@
+:root, [data-theme="default"] {
+	--white: #FFFFFF;
+	--black: #000000;
+	// --gray1: hsla(204, 90%, 88%, 1);
+	// --gray1: #D2D2E6;
+	--gray1: hsla(240, 29%, 86%, 1); //#D2D2E6;
+	--gray2: hsla(0, 0%, 48%, 1);
+	--gray3: hsla(0, 0%, 62%, 1);
+	--gray4: hsla(0, 0%, 72%, 1);
+	--color-primary: var(--gray1);
+
+	--corp-c-1: hsla(206, 71%, 15%, 1); // #0B2A41 tmavomodrá
+	--corp-c-2: hsla(211, 29%, 26%, 1); // #304357 modrá
+	--corp-c-3: hsla(18, 83%, 53%, 1); // #EB5F23 oranžová
+	--corp-c-4: hsla(20, 81%, 35%, 1); // #A04011 světle oranžová
+	--corp-c-5: hsla(206, 71%, 10%, 1); // #0B2A41 tmavomodrá
+
+	--blue-c: hsla(224, 84%, 50%, 1);
+	--purple-c: hsla(327, 94%, 21%, 1);
+	--orange-c: hsla(14, 100%, 50%, 1);
+
+	--navy-c: hsla(193, 95%, 15%, 1);
+	--yellow-c: hsla(58, 100%, 62%, 1);
+
+	/* color contrasts */
+	--color-bg: var(--gray1);
+	--menu-bg: var(--white);
+	--color-contrast-high: var(--black);
+	--color-labels: var(--black);
+	--border-C: transparent;
+	--border-C-Footer: transparent;
+
+	--identita-bgr: var(--blue-c);
+	--identita-clr: var(--gray1);
+	//
+	--story-bgr: var(--navy-c);
+	--story-clr: var(--gray1);
+	//
+	--plan1-bgr: var(--yellow-c);
+	--film-bgr: var(--plan1-bgr);
+	--plan1-clr: var(--navy-c);
+	--film-clr: var(--plan1-clr);
+	//
+	--plan2-bgr: var(--gray1);
+	--vystava-bgr: var(--plan2-bgr);
+	--plan2-clr: var(--blue-c);
+	--vystava-clr: var(--plan2-clr);
+	//
+	--plan3-bgr: var(--blue-c);
+	--kniha-bgr: var(--plan3-bgr);
+	--plan3-clr: var(--gray1);
+	--kniha-clr: var(--plan3-clr);
+	//
+	--plan4-bgr: var(--navy-c);
+	--cyklus-bgr: var(--plan4-bgr);
+	--plan4-clr: var(--gray1);
+	--cyklus-clr: var(--plan4-clr);
+	//
+	--plan5-bgr: var(--navy-c);
+	// --partners-bgr: var(--navy-c);
+	--partners-bgr: #002733;
+	--plan5-clr: var(--gray1);
+	--partners-clr: var(--gray1);
+	//
+	//
+	--planShop-bgr: var(--yellow-c);
+	--planShop-clr: var(--navy-c);
+	//
+	--plan6-bgr: var(--blue-c);
+	--newsletter-bgr: var(--plan6-bgr);
+	--plan6-clr: var(--gray1);
+	--newsletter-clr: var(--plan6-clr);
+	//
+	--plan7-bgr: var(--yellow-c);
+	--press-bgr: var(--plan7-bgr);
+	--plan7-clr: var(--navy-c);
+	--press-clr: var(--plan7-clr);
+	//
+	--plan8-bgr: var(--black);
+	--footer-bgr: var(--plan8-bgr);
+	--plan8-clr: var(--gray1);
+	--footer-clr: var(--plan8-clr);
+	//
+	
+	
+	--tvurci-titl-clr: var(--navy-c);
+	--tvurci-titl-bgr: var(--yellow-c);
+	--tvurci-cont-bgr: var(--gray1);
+	--tvurci-cont-clr: var(--blue-c);
+	
+	--news-titl-clr: var(--blue-c);
+	--news-titl-bgr: var(--gray1);
+	--news-cont-bgr: var(--navy-c);
+	--news-cont-clr: var(--gray1);
+
+	--media-cont-bgr: var(--yellow-c);
+	--media-cont-clr: var(--navy-c);
+
+	--menu-clr: var(--blue-c);
+	--menu-bgr: var(--gray1);
+
+	// --bw-outline: 0.0px;
+	
+}
+$body-C: var(--color-contrast-high);
+$body-BGR: var(--color-bg);
+$active-C: var(--corp-c-1);
+$nav-item-BOR_C: var(--blue-c);
+$nav-BGR: var(--black);
+$ham-BGR: var(--blue-c);
+$ham-C: hsla(157, 80%, 35%, 0.85);
+
+[data-theme="no-color"] {
+	.section-header,
+	.section-footer,
+	.section-content {
+		&--press,
+		&--footer {
+			.section-header--title_container,
+			.inner-content-wrapper {
+				border-width: var(--bw-outline) var(--bw-outline) 0 var(--bw-outline);
+			}
+		}
+		&--partners {
+			.section-header--title_container {
+					border-width: 0;
+					border-color: transparent;
+				}
+		}
+	}
+	.section-header {
+		&--plan3 {
+			&::after {
+				border-width: 0 var(--bw-outline) 0 0;
+			}
+		}
+	}
+	.newsrun {
+		color: var(--white);
+	}
+	.newsrun--item + .newsrun--item,
+	.marquee-content:nth-child(2) .newsrun--item:first-child {
+		&::before {
+			background-color: var(--white);
+	    }
+	}
+}
+[data-theme="no-color"] {
+	/* color contrasts */
+	--color-bg: var(--white);
+	--menu-bg: var(--white);
+	--color-contrast-high: var(--black);
+	--border-C: var(--black);
+	--border-C-Footer: var(--white);
+
+	--identita-bgr: var(--black);
+	--identita-clr: var(--white);
+	--story-bgr: var(--white);
+	--story-clr: var(--black);
+	//
+	--plan1-bgr: var(--white);
+	--planShop-bgr: var(--white);
+	--film-bgr: var(--plan1-bgr);
+	--plan1-clr: var(--black);
+	--planShop-clr: var(--black);
+	--film-clr: var(--plan1-clr);
+	//
+	--plan2-bgr: var(--white);
+	--vystava-bgr: var(--plan2-bgr);
+	--plan2-clr: var(--black);
+	--vystava-clr: var(--plan2-clr);
+	//
+	--plan3-bgr: var(--white);
+	--kniha-bgr: var(--plan3-bgr);
+	--plan3-clr: var(--black);
+	--kniha-clr: var(--plan3-clr);
+	//
+	--plan4-bgr: var(--white);
+	--cyklus-bgr: var(--plan4-bgr);
+	--plan4-clr: var(--black);
+	--cyklus-clr: var(--plan4-clr);
+	//
+	--plan5-bgr: var(--black);
+	--partners-bgr: var(--plan5-bgr);
+	--plan5-clr: var(--white);
+	--partners-clr: var(--plan5-clr);
+
+	--planShop-bgr: var(--white);
+	--planShop-clr: var(--black);
+	//
+	--plan6-bgr: var(--white);
+	--newsletter-bgr: var(--plan6-bgr);
+	--plan6-clr: var(--black);
+	--newsletter-clr: var(--plan6-clr);
+	//
+	--plan7-bgr: var(--black);
+	--press-bgr: var(--plan7-bgr);
+	--plan7-clr: var(--white);
+	--press-clr: var(--plan7-clr);
+	//
+	--plan8-bgr: var(--black);
+	--footer-bgr: var(--plan8-bgr);
+	--plan8-clr: var(--white);
+	--footer-clr: var(--plan8-clr);
+
+	--tvurci-titl-bgr: var(--white);
+	--tvurci-titl-clr: var(--black);
+	--tvurci-cont-bgr: var(--white);
+	--tvurci-cont-clr: var(--black);
+
+	--news-titl-clr: var(--black);
+	--news-titl-bgr: var(--white);
+	--news-cont-bgr: var(--white);
+	--news-cont-clr: var(--black);
+
+	--media-cont-bgr: var(--white);
+	--media-cont-clr: var(--black);
+
+	--menu-clr: var(--black);
+	--menu-bgr: var(--white);
+
+	--bw-outline: 1px;
+
+	.bg_color {
+	    &_blue,
+	    &_dark,
+	    &_grey {
+	        background-color: var(--black);
+	        --color-contrast-high: var(--white);
+	    }
+	}
+}

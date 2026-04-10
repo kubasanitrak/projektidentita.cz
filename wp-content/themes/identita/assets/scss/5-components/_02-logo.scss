@@ -1,0 +1,20 @@
+.logo-container {
+	// position: sticky;
+	// z-index: 6;
+	// top: var(--pad-T);
+	width: calc(var(--logo-W) * var(--logo-RATIO));
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: relative;
+	@include mq(mq-land) {
+		--logo-RATIO: 1.46;
+	}
+}
+
+
+.logo {
+	
+	
+
+}

@@ -1,0 +1,13 @@
+{
+    "name": "acf/accordeon-series-parts",
+    "title": "Block Series Parts",
+    "description": "Custom accordeon block for series parts.",
+    "category": "formatting",
+    "icon": "<svg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'><path d='M5 1h14v2H5V1ZM5 9h14v1H5V9ZM5 11h15v1H5v-1ZM5 13h10v1H5v-1ZM5 17h10v1H5v-1ZM5 15h14v1H5v-1ZM1 3 0 4l2 2 2-2-1-1-1 1-1-1ZM5 4.5h10v2H5v-2Z'/></svg>",
+    "keywords": ["series", "parts"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "BLOCK-accordeon-series-parts.php"
+    },
+    "align": "full"
+}

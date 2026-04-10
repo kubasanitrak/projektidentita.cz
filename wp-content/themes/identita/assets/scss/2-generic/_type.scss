@@ -1,0 +1,42 @@
+p, dl {
+	@include mq(mq-S) {}
+}
+
+// em, i,
+// .em, .italic {
+// 	font-family: 'InterI-var', Helvetica, Arial, sans-serif;
+// 	font-style: normal;
+// }
+
+h1, h2, h3, h4, h5, h6, p, dt, dl, dd, sup, sub, ul, a, .hamburger span, .colorise-btn span {
+	-webkit-font-smoothing: antialiased; /* Chrome, Safari */
+	-moz-osx-font-smoothing: grayscale; /* Firefox */
+	    
+	-moz-font-feature-settings:    "kern" 1; 
+	-ms-font-feature-settings:     "kern" 1; 
+	-o-font-feature-settings:      "kern" 1; 
+	-webkit-font-feature-settings: "kern" 1; 
+	font-feature-settings:         "kern" 1;
+	// font-kerning: none;
+}
+.minor,
+.plain {
+	font-weight: normal;
+	font-style: normal;
+}
+.plain {
+	font-size: $fz-PLAIN;
+}
+.minor {
+	font-size: $fz-MINOR;
+}
+
+.maw-45 {
+	max-width: 45em;
+}
+.maw-40 {
+	max-width: 40em;
+}
+.maw-35 {
+	max-width: 35em;
+}

@@ -1,0 +1,47 @@
+.partners-grid {
+	display: grid;
+	--partner-item-W: 120px;
+	@include mq(mq-land) {
+		--partner-item-W: 148px;
+	}
+	grid-template-columns: repeat(auto-fit, minmax(var(--partner-item-W), 1fr));
+	gap: 0 var(--partners-gap);
+
+	// padding-bottom: var(--partners-gap);
+
+	&.faculties-grid {
+		// --partner-item-W: 100px;
+		// grid-template-columns: repeat(auto-fit, minmax(var(--partner-item-W), 0.5fr));
+			justify-content: center;
+			align-items: center;
+		.partners-grid--item {
+			&:not(.double-width) {
+				max-width: 148px;
+			}
+			margin: 0 auto;
+			// align-items: center//;
+			// justify-content: ce//nter;
+		}
+	}
+	&--item {
+		display: flex;
+		@include mq(mq-land) {
+			justify-content: center;
+			align-items: center;
+		}
+		// object-fit: contain;
+		overflow: hidden;
+
+		&---text_link {
+			width: 100%;
+			padding: 0.5em 0;
+			@include mq(mq-land) {
+				padding: 1em;
+			}
+		}
+	}
+	&--item_img {
+		width: 100%;
+		max-width: 100%;
+	}
+}

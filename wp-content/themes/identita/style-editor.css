@@ -1,0 +1,52 @@
+@import 'assets/css/blocks.css';
+:root {
+    --pad-T: calc(8px + (12 - 8) * ((100vw - 320px) / (2560 - 320)));
+    --pad-R: calc(12px + (36 - 12) * ((100vw - 320px) / (2560 - 320)));
+    --maW: 1440;
+    --gap: var(--pad-R);
+    --gutter: var(--gap);
+
+    --info-col-num: 2;
+    --info-col-num-minus-1: 1;
+}
+    /* Main column width */
+.wp-block { max-width: 1440px; }
+.wp-block-acf-proj-info-col {
+    max-width: 50%;
+}
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] { max-width: 1440px; }
+
+/* Width of "full-width" blocks */
+.wp-block[data-align="full"] { max-width: none; }
+
+.shop-container {
+    display: flex;
+}
+
+h1, h2, h3, h4, h5, p {
+/*    font-family: 'Wallop-M', sans-serif;*/
+}
+
+
+.shop-container,
+.shop-item {
+    border: 2px dotted var(--gray1);
+}
+
+.shop-container {
+    &,
+    .acf-innerblocks-container {
+        display: flex;
+        gap: var(--pad-R);
+    }
+}
+
+.shop-item {
+    &,
+    .acf-innerblocks-container {
+        display: flex;
+        flex-direction: column;
+/*        justify-content: flex-end;*/
+    }
+}

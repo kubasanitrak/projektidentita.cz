@@ -1,0 +1,21 @@
+<svg viewBox="0 0 144 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+    :root { --dark: #000000; --light: #adadad; }
+    
+    .dark-fill { fill: var(--dark); } 
+    .light-fill { fill: var(--light); } 
+    .dark-stroke { stroke: var(--dark); } 
+    .light-stroke { stroke: var(--light); } 
+    
+    @media (prefers-color-scheme: dark) { 
+    .dark-fill { fill: #adadad; } 
+    .light-fill { fill: #000000; }  
+    .dark-stroke { stroke: #adadad; } 
+    .light-stroke { stroke: #000000; } 
+    /* --dark: #adadad; --light: #000000; */
+    }
+  </style>
+<rect width="144" height="144" fill="#3250E6"/>
+<rect x="32" y="58" width="112" height="86" fill="#D2D2E6"/>
+<rect x="58" y="32" width="86" height="112" fill="#FFFA46"/>
+</svg>

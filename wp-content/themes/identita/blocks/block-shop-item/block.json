@@ -1,0 +1,13 @@
+{
+    "name": "acf/shopitem",
+    "title": "Shopitem",
+    "description": "Custom shop item block.",
+    "category": "formatting",
+    "icon": "<svg viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'><path d='M0 0v36h27V0H0Zm25 34H2V2h23v32ZM4 23h16v2H4zM4 26h13v2H4zM14 30h9v2h-9zM23 4H4v17h19V4Zm-2 15H6V6h15v13ZM14 18h6l-4.5-8-3.2 5.6-1.8-2.6L7 18h7z'/><circle cx='9' cy='9' r='2'/></svg>",
+    "keywords": ["shop", "shop item"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "BLOCK-shop-item.php"
+    },
+    "align": "full"
+}
