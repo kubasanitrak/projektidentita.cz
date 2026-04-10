@@ -545,5 +545,5 @@
 	 <!-- START WP_FOOTER() -->
 	<?php wp_footer(); ?>
 	<!-- END WP_FOOTER() -->
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/wp-block-fix-style.css?v21-03-2025.01" />
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/wp-block-fix-style.css?v10-04-2026.01" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/identita-simple-lightbox-override.css?v21-03-2025.01" />

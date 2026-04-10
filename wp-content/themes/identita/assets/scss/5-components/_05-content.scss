@@ -147,7 +147,8 @@ p + .partners-list {
 	position: relative;
 	z-index: 0;
 	padding: 0 var(--pad-R);
-	aspect-ratio: 8/11;
+	// aspect-ratio: 8/11;
+	aspect-ratio: 6/5;
 
 	@include mq(mq-land) {
 	}

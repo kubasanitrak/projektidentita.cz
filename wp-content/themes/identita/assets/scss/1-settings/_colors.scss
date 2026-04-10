@@ -15,12 +15,21 @@
 	--corp-c-4: hsla(20, 81%, 35%, 1); // #A04011 světle oranžová
 	--corp-c-5: hsla(206, 71%, 10%, 1); // #0B2A41 tmavomodrá
 
+	/*
+	modrá > zůstává
+	#233D4C > #DD3E09
+	#FDF952 > #C8E6FE
+	#D0D0E4 > #FFFFFF
+	*/
+
 	--blue-c: hsla(224, 84%, 50%, 1);
 	--purple-c: hsla(327, 94%, 21%, 1);
 	--orange-c: hsla(14, 100%, 50%, 1);
 
-	--navy-c: hsla(193, 95%, 15%, 1);
-	--yellow-c: hsla(58, 100%, 62%, 1);
+	// --navy-c: hsla(193, 95%, 15%, 1);
+	--navy-c: hsla(15, 92%, 45%, 1);
+	// --yellow-c: hsla(58, 100%, 62%, 1);
+	--yellow-c: hsla(207, 96%, 89%, 1);
 
 	/* color contrasts */
 	--color-bg: var(--gray1);
@@ -31,7 +40,8 @@
 	--border-C-Footer: transparent;
 
 	--identita-bgr: var(--blue-c);
-	--identita-clr: var(--gray1);
+	// --identita-clr: var(--gray1);
+	--identita-clr: var(--white);
 	//
 	--story-bgr: var(--navy-c);
 	--story-clr: var(--gray1);
@@ -41,7 +51,8 @@
 	--plan1-clr: var(--navy-c);
 	--film-clr: var(--plan1-clr);
 	//
-	--plan2-bgr: var(--gray1);
+	// --plan2-bgr: var(--gray1);
+	--plan2-bgr: var(--white);
 	--vystava-bgr: var(--plan2-bgr);
 	--plan2-clr: var(--blue-c);
 	--vystava-clr: var(--plan2-clr);

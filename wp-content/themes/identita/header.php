@@ -36,7 +36,7 @@
 <![endif]-->
 
 
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css?v17-05-2024.01" />
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css?v10-04-2026.01" />
 
 <style>
 	/* CRITICAL CSS */
