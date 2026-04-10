@@ -127,3 +127,32 @@ body, html { height: stretch; height: -webkit-fill-available; }
 		}
 	}
 }
+
+
+.section-content--aktuality .news-list--item {
+	@include mq(mq-land) {
+	  flex: 1 0 40%!important;
+	}
+}
+
+.section-content--plan3 {
+  --color-bg: var(--blue-c);
+}
+
+.fill-color-contrast-high, 
+.fill-color-contrast-high .acf-innerblocks-container * {
+	fill: var(--color-contrast-high);
+}
+.inner-content .wp-block-table td {
+	border-left: none;
+	border-top: none;
+	border-right: none;
+	font-variant-numeric: tabular-nums;
+}
+.body-blackout {
+  z-index: 1013 !important;
+}
+
+.popup-modal {
+  z-index: 1014 !important;
+}
